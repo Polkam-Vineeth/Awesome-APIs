@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Covid Stats</title>
+    <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+    <script src="c19api.js"></script>
+  
+    <style>
+      *{
+        padding: 0% 1%;
+      }
+      body {
+        /* background: url("https://image.freepik.com/free-vector/people-scared-coronavirus-disease_52683-46521.jpg"); */
+
+        background: url("https://i.etsystatic.com/23656546/d/il/606d54/2731973981/il_340x270.2731973981_ezce.jpg?version=0");
+        background-repeat: repeat round;  
+        /* background-size: cover; */
+      }
+      input,textarea {
+        font-family: FontAwesome;
+      }
+      #temp {
+        background-color: rgb(2, 2, 2);
+        color: cornsilk;
+      }
+      .card {
+        background-color: #6ba644 ;
+      }
+    </style>
+</head>
+<body>
+    <div class="container" >
+      <div class="ml-3 mr-3 mb-3 mt-3 mx-auto" style="width: 700px;">
+        <div class="card card-signup-form text-white">
+          <div class="display-3 text-center text-dark text-uppercase font-weight-bold">Covid19 Status</div><br>
+          <div class="form-group">
+            
+              <input class="form-control db" id="nation" type="text" placeholder="&#xf0ac; Enter Country Name" required="required"><br>
+            
+              <input class="date form-control" id="date" type="date" >
+          </div>
+          <input class="submit form-control btn-dark btn-block text-uppercase" type="submit" value="Status" onclick=getCovidStats()>
+          <br>
+          
+       
+        </div>
+      </div>
+      <div id="temp">
+              
+      </div>
+    </div>
+</body>
+</html>
+
+
